@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class bullet_enemy2 : MonoBehaviour
 {
-    GameManager gm;
     public float speed;
     private Rigidbody2D rb;
 
@@ -27,10 +26,7 @@ public class bullet_enemy2 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            gm.playerIsDead = true;
-            GameObject.Destroy(this.gameObject);
             GameObject.Destroy(collision.gameObject);
-            gm.CheckPlayerLives();
         }
     }
 }

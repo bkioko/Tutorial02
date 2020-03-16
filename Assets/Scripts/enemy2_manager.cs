@@ -50,7 +50,7 @@ public class enemy2_manager : MonoBehaviour
             maxTimer = Random.Range(timerMin, timerMax);
         }
 
-        timer += 0.1f;
-        yield return new WaitForSeconds(0.1f);
+        timer += 0.025f;
+        yield return new WaitForSeconds(0.025f);
     }
 }

@@ -53,7 +53,7 @@ public class Enemy2_Controller : MonoBehaviour
             maxTimerBullet = Random.Range(timerMin, timerMax);
         }
 
-        timerBullet += 0.2f;
-        yield return new WaitForSeconds(0.1f);
+        timerBullet += 0.05f;
+        yield return new WaitForSeconds(0.025f);
     }
 }
