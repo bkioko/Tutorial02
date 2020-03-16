@@ -173,12 +173,12 @@ TextureImporter:
       name: laser-bolts_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 16
-        width: 16
-        height: 16
+        width: 12
+        height: 13
       alignment: 9
-      pivot: {x: 0.53513396, y: 0.4077735}
+      pivot: {x: 0.54473835, y: 0.5097281}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,10 +196,10 @@ TextureImporter:
         serializedVersion: 2
         x: 16
         y: 16
-        width: 16
-        height: 16
+        width: 12
+        height: 13
       alignment: 9
-      pivot: {x: 0.40777338, y: 0.4033817}
+      pivot: {x: 0.55183953, y: 0.50533617}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: laser-bolts_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 16
+        width: 15
         height: 16
       alignment: 9
-      pivot: {x: 0.5263505, y: 0.18379457}
+      pivot: {x: 0.5066614, y: 0.5367569}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,10 +238,10 @@ TextureImporter:
         serializedVersion: 2
         x: 16
         y: 0
-        width: 16
-        height: 16
+        width: 13
+        height: 15
       alignment: 9
-      pivot: {x: 0.4033816, y: 0.13109365}
+      pivot: {x: 0.5017344, y: 0.5568093}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
