@@ -122,7 +122,7 @@ MonoBehaviour:
   speed: -0.25
   bullet: {fileID: 748929358214024617, guid: ced8fe94b3fa6e34fb162e3cab9e8d0e, type: 3}
   timerMin: 5
-  timerMax: 25
+  timerMax: 12
   canFireBullets: 1
 --- !u!61 &8987700236976104257
 BoxCollider2D:

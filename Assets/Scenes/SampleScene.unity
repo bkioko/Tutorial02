@@ -229,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 3270810010946242583, guid: 65e65c9ee4b58f04fb71a131b59f0b33, type: 3}
   timerMin: 5
-  timerMax: 25
+  timerMax: 12
 --- !u!4 &152451985
 Transform:
   m_ObjectHideFlags: 0
@@ -1010,8 +1010,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy2: {fileID: 4644717920280571013, guid: 15a53a0d313cfb14d9ae778a2cc33b71, type: 3}
-  timerMin: 5
-  timerMax: 30
+  timerMin: 4
+  timerMax: 15
 --- !u!4 &1295638804
 Transform:
   m_ObjectHideFlags: 0

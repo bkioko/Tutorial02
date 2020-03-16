@@ -26,6 +26,7 @@ public class bullet_enemy2 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            GameObject.Destroy(this.gameObject);
             GameObject.Destroy(collision.gameObject);
         }
     }

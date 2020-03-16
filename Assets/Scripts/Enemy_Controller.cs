@@ -12,7 +12,7 @@ public class Enemy_Controller : MonoBehaviour
     public GameObject bullet;
 
     public float timerMin = 5f;
-    public float timerMax = 25f;
+    public float timerMax = 12f;
     public bool canFireBullets = true;
 
     // Start is called before the first frame update
@@ -23,17 +23,16 @@ public class Enemy_Controller : MonoBehaviour
 
         timerBullet = 0;
         maxTimerBullet = Random.Range(timerMin, timerMax);
+
+        if (canFireBullets)
+            StartCoroutine("FireBullet");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (canFireBullets)
-            StartCoroutine("FireBullet");
-
         if (Camera.main.WorldToViewportPoint(transform.position).y < 0)
-            Destroy(this.gameObject);
-        
+            Destroy(this.gameObject);   
     }
 
     void SpawnBullet()
@@ -45,15 +44,18 @@ public class Enemy_Controller : MonoBehaviour
 
     IEnumerator FireBullet()
     {
-        if (timerBullet >= maxTimerBullet)
+        while (true)
         {
-            // Spawn an enemy
-            SpawnBullet();
-            timerBullet = 0;
-            maxTimerBullet = Random.Range(timerMin, timerMax);
-        }
+            if (timerBullet >= maxTimerBullet)
+            {
+                // Spawn an enemy
+                SpawnBullet();
+                timerBullet = 0;
+                maxTimerBullet = Random.Range(timerMin, timerMax);
+            }
 
-        timerBullet += 0.025f;
-        yield return new WaitForSeconds(0.025f);
+            timerBullet += 0.1f;
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }
