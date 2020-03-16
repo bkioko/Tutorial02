@@ -11,8 +11,8 @@ public class Enemy2_Controller : MonoBehaviour
     private float maxTimerBullet;
     public GameObject bullet;
 
-    public float timerMin = 4f;
-    public float timerMax = 15f;
+    public float timerMin = 5f;
+    public float timerMax = 12f;
     public bool canFireBullets = true;
 
     // Start is called before the first frame update
@@ -48,14 +48,14 @@ public class Enemy2_Controller : MonoBehaviour
         {
             if (timerBullet >= maxTimerBullet)
             {
-                // Spawn an enemy
+                // Spawn a bullet
                 SpawnBullet();
                 timerBullet = 0;
                 maxTimerBullet = Random.Range(timerMin, timerMax);
             }
 
-            timerBullet += 0.1f;
-            yield return new WaitForSeconds(0.1f);
+            timerBullet += 0.05f;
+            yield return new WaitForSeconds(0.05f);
         }
     }
 }

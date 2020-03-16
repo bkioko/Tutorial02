@@ -8,8 +8,8 @@ public class enemy2_manager : MonoBehaviour
     private float maxTimer;
     public GameObject enemy2;
 
-    public float timerMin = 4f;
-    public float timerMax = 15f;
+    public float timerMin = 5f;
+    public float timerMax = 12f;
 
     // Start is called before the first frame update
     void Start()
@@ -52,8 +52,8 @@ public class enemy2_manager : MonoBehaviour
                 maxTimer = Random.Range(timerMin, timerMax);
             }
 
-            timer += 0.1f;
-            yield return new WaitForSeconds(0.1f);
+            timer += 0.2f;
+            yield return new WaitForSeconds(0.2f);
         }
     }
 }
